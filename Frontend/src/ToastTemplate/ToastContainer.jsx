@@ -1,5 +1,5 @@
 import React from 'react'
-import SuccessToast from './successToast'
+import SuccessToast from './SuccessToast'
 import DeleteToast from './DeleteToast'
 import ErrorToast from './ErrorToast';
 
