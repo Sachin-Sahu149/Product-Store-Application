@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { storeLogo } from '../assets'
 import { useNavigate, Link } from 'react-router'
 import { useProductStore } from '../ProductStore/product';
 

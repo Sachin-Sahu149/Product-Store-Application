@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { IoMdCloseCircleOutline } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 
 function Modal() {
@@ -45,4 +44,3 @@ function Modal() {
 
 export default Modal;
 
-// active:ring-offset-1 active:ring-2 active:ring-gray-700

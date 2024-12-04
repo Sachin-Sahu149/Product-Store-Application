@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { IoClose } from 'react-icons/io5'
-import { MdAddTask } from "react-icons/md";
 import { MdOutlineError } from "react-icons/md";
 
 function ErrorToast({ bg, textColor, textSize, info, isVisible, setisVisible }) {

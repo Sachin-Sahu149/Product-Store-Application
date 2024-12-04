@@ -1,21 +1,12 @@
-import { FaBeer } from 'react-icons/fa';
-import { CgAddR } from "react-icons/cg";
-import { darkMode, lightMode } from './assets';
+
 import Navbar from './Component/Navbar';
-import Card from './Component/Card';
-import Modal from './Component/Modal';
-import Container from './Component/GridContainer';
 import Footer from './Component/Footer';
 import NewProduct from './Component/NewProduct';
 import { Routes, Route, useActionData } from 'react-router';
 import Edit from './Component/Edit'
-import Toast from './ToastTemplate/Toast';
 import { useEffect, useState } from 'react';
-import DeleteToast from './ToastTemplate/DeleteToast';
-import SuccessToast from './ToastTemplate/successToast';
 import ToastContainer from './ToastTemplate/ToastContainer';
 import GridContainer from './Component/GridContainer';
-import ErrorToast from './ToastTemplate/ErrorToast';
 
 
 function App() {
@@ -51,8 +42,7 @@ function App() {
           <Route path='add' element={<NewProduct setsuccessToast={setsuccessToastVisible} seterrorToast={seterrorToastVisible} settoastInfo={settoastInfo} />} />
         </Routes>
       </div>
-      <ToastContainer successToastState={[successToastVisible,setsuccessToastVisible]} deleteToastState={[deleteToastVisible,setdeleteToastVisible]}
-       errorToastState={[errorToastVisible,seterrorToastVisible]} toastInfo={toastInfo}/>
+      <ToastContainer successToastState={[successToastVisible,setsuccessToastVisible]} deleteToastState={[deleteToastVisible,setdeleteToastVisible]}errorToastState={[errorToastVisible,seterrorToastVisible]} toastInfo={toastInfo}/>
       <Footer />
     </div>
   )
